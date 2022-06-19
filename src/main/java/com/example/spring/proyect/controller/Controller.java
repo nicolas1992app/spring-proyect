@@ -26,4 +26,5 @@ public class Controller {
     public ResponseEntity<SalidaDto> saludo (@Valid @RequestBody EntradaDto entrada) {
         return new ResponseEntity<>(utilidadService.saludar(entrada), HttpStatus.OK);
     }
+
 }
